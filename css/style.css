@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+    font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
+    background-size: cover;    
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e31111;
+    padding: 5px 20px 5px 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    backdrop-filter: blur(20px);
+  }
+
