@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,23 +6,138 @@
 
 body {
     display: flex;
+    background-image: url(../images/baleine-bosse-sautant-au-dessus-mer-ai-generative.jpg);
     flex-direction: column;
     color: wheat;
     font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
     background-size: cover;    
+    
 }
 
-
 header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #e31111;
-    padding: 5px 20px 5px 20px;
-    backdrop-filter: blur(10px);
+    color: white;
+    padding: 5px 20px;
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
-    backdrop-filter: blur(20px);
-  }
+    flex-wrap: nowrap; 
+}
+
+  ul {
+    list-style: none; /* Enlève les puces */
+    display: flex; /* Affiche les éléments de la liste horizontalement */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+    font-size: 1.2rem;
+    color: #fff;
+    
+}
+
+  a {
+    margin-right: 5rem; /* Espacement entre les liens */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.input-title{
+    display: flex;
+    align-items: center;
+   }
+
+   #site-search {
+       background-color: transparent; /* Fond transparent */
+       color: #fff;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     margin-right: 10px; /* Ajuste la position par rapport au bouton */
+     width: 200px; /* Ajuste la largeur selon tes besoins */
+
+   }
+
+   #search-btn {
+       background-color: transparent; /* Fond transparent */
+       border: 1px #fff; /* Couleur de la bordure */
+       border-radius: 30px 30px 30px 30px;
+       cursor: pointer;
+       color: #fff; /* Couleur du texte */
+       transition: all 0.3s ease-out;      
+         padding: 10px;
+       display: flex;
+       align-items: center;
+       margin-left: 10px;
+
+   }
+   #search-btn:hover {
+       background-color: #242f49;
+       color: #fff;
+   }
+
+li:last-child {
+    margin-right: 0; /* Pas d'espacement après le dernier élément */
+}
+
+.title-logo h1 {
+    color: #ffffff; /* Couleur du texte en blanc */
+    font: 700 2em 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.title-logo p {
+    display: flex;
+    font-size: 0.8em; /* Taille de la police plus petite */
+    color: #ffffff; /* Couleur du texte en blanc */
+    margin-top: 8px; /* Marge en haut pour l'espace */
+}
+
+.title-logo::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #242f49; /* Couleur de la ligne en blanc */
+    margin: 8px auto 0;
+}
+
+#intro {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-weight: bold; /* Gras */    
+}
+
+#intro h2 {
+font-size: 4rem;
+color: #fff;
+margin: 5rem;
+}
+
+#intro span {
+    color: #53524f;
+    font-style: italic;
+}
+
+#intro p {
+    color: #fff;
+    font-size: 1.5rem;
+   margin-left: 1rem;
+    padding: 20px;
+    float: left; /* Ajout pour aligner à droite */
+    color: #1b2640;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+   
+}
+
+#intro i {
+    color: #ffffff;
+}
+
 
