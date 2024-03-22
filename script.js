@@ -25,3 +25,16 @@ backBtn.addEventListener("click", () => {
 });
 
 
+function zoomIn(event){
+    const element = event.currentTarget;
+
+    // ajuster la taille du zoom souhaiter 
+    element.style.transform = "scale(2)";
+    element.style.transition = "transform 0.5s ease";
+}
+
+function zoomOut(event){
+    element.style.transform = "scale(1)";
+    element.style.transition = "transform 0.5s ease";
+
+}
