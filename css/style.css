@@ -163,7 +163,7 @@ margin: 5rem;
     border-radius: 5px; /* Ou 30px, selon la valeur que vous préférez */
     border: 2px solid #fff; /* Assurez-vous d'inclure une couleur de bordure */
     color: #fff;
-    margin-top: 50rem; /* Ajusté pour être plus réaliste, mais modifiez selon vos besoins */
+    margin-top:42rem; /* Ajusté pour être plus réaliste, mais modifiez selon vos besoins */
     padding: 20px;
     width: 100%;
    
@@ -187,27 +187,68 @@ margin: 5rem;
     text-decoration:underline;
 }
 
-.carousel {
+#carousel {
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     position: relative;
-    overflow: hidden;
-    color: #fff;
+
 }
 
-.carousel h2 {
+#container {
+    width: 800px;
+    height: 400px;
+}
+
+.photo {
+    width: 800px;
+    height: 400px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    
+}
+
+.button {
+    position: absolute;
+    width: 70px; 
+    cursor: pointer;
+    top: 160px;
+}
+
+#g {
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#d {
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+} 
+#d:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+} 
+
+.carousel  {
     font-size: 2rem;
     text-align: center;
     margin-top: 3rem;
     padding: 40px;
-    text-decoration:underline
+    text-decoration:underline;
+    color: #fff;
     
 }
-.carousel-images {
-    display:flex ;
-}
 
-.carousel-images img {
-    max-width: 30%;
-    display: block;
-    transition: transform 0.5s ease;
-    margin: 20px;
-}
