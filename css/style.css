@@ -201,11 +201,11 @@ margin: 5rem;
     text-decoration:underline
     
 }
-.carousel-img {
+.carousel-images {
     display:flex ;
 }
 
-.carousel-img img {
+.carousel-images img {
     max-width: 30%;
     display: block;
     transition: transform 0.5s ease;
