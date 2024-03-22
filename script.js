@@ -1,50 +1,27 @@
-document.body.onload = function(){
-    nbr=5;
-    p=0;
 
-    container = document.getElementById("container");
-    g = document.getElementById("g");
-    d = document.getElementById("d");
+const scrollContainer = document.querySelector(".gallery");
 
-    container.style.width=(800*nbr) + "px";
 
-    for( i = 1 ; i <= nbr ; i++){
+const backBtn = document.getElementById("backBtn");
+const nextBtn = document.getElementById("nextBtn");
 
-        div = document.createElement("div");
+// Ajouter un écouteur d'événement pour le défilement avec la molette de la souris sur le conteneur de la galerie
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault(); // Empêcher le comportement de défilement par défaut pour un contrôle fin
+    scrollContainer.scrollLeft += evt.deltaY; // Défiler horizontalement en fonction du mouvement vertical de la molette
+    scrollContainer.style.scrollBehavior = "auto"; // Désactiver le défilement fluide pour les interactions de la molette de la souris
+});
 
-        div.className="photo";
-        div.style.backgroundImage="url('images/im"+i+".jpg')";
+// Ajouter un écouteur d'événement sur le bouton "Suivant" pour faire défiler la galerie vers la droite
+nextBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth"; // Activer le défilement fluide pour une expérience utilisateur agréable
+    scrollContainer.scrollLeft += 800; 
+});
 
-        container.appendChild(div);
-    }
-}
+// Ajouter un écouteur d'événement sur le bouton "Retour" pour faire défiler la galerie vers la gauche
+backBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth"; // Assurer que le défilement reste fluide lors du clic
+    scrollContainer.scrollLeft -= 800; // Faire défiler le conteneur de 900 pixels vers la gauche
+});
 
-g.onclick = function(){
-    if (p >-nbr+1)
-    p--;
-    container.style.transform="translate("+p*800+"px)";
-    container.style.transition="all 0.5s ease";
-    afficherMasquer();
-}
 
-d.onclick = function(){
-    if (p <0)
-    p++;
-    container.style.transform="translate("+p*800+"px)";
-    container.style.transition="all 0.5s ease";
-    afficherMasquer();
-}
-
-function afficherMasquer(){
-
-    if (p==-nbr+1)
-    g.style.visibility = "hidden";
-else
-    g.style.visibility = "visible";
-
-    if (p==0)
-
-    d.style.visibility = "hidden";
-else
-    d.style.visibility = "visible";
-}

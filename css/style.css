@@ -243,12 +243,98 @@ margin: 5rem;
 } 
 
 .carousel  {
-    font-size: 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
     margin-top: 3rem;
     padding: 40px;
+    color: #ffffff;
     text-decoration:underline;
-    color: #fff;
+
     
 }
 
+.carousel  span {
+    color: #02457a;
+    font-style: italic;
+   
+}
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px; /* Espacement entre les images */
+    padding: 10px;
+}
+
+.gallery span {
+    flex: none; /* Garde les spans dans le flux flex sans les étirer */
+}
+
+.gallery span img {
+    margin: 15px;
+    width: 800px; /* ou 'auto' pour conserver les proportions originales */
+    height: 400px; /* ou 'auto' pour conserver les proportions originales */
+    transition: transform 0.5s;
+}
+
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#backBtn {
+    cursor: pointer;
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transform:all 0.5s ease;
+}
+ #nextBtn {
+    cursor: pointer;
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transform:all 0.5s ease;
+}
+
+#backBtn:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transform:all 0.5s ease;
+}
+#nextBtn:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transform:all 0.5s ease;
+}
+
+
+
+.gallery span img:hover{
+    filter:grayscale(0) ;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#carte-inter h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding: 40px;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+#carte-inter img {
+    max-width: 100%;
+    
+}
