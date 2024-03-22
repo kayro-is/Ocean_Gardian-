@@ -406,3 +406,65 @@ footer {
     background-color: #fff; /* Couleur de la ligne */
     margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
 }
+
+/* Pour les tablettes */
+@media (max-width: 768px) {
+    .header-section, .footer-content {
+        flex-direction: column;
+    }
+
+    .title-logo h1, .footer-links a, #intro h2 {
+        font-size: 2rem;
+    }
+
+    .gallery span img, #carousel, #container {
+        width: 100%;
+        height: auto;
+    }
+
+    .input-title, .button {
+        padding: 10px;
+        margin: 0 auto; /* Centre les éléments */
+    }
+
+    .social-icon {
+        font-size: 20px; /* Réduit la taille des icônes des réseaux sociaux */
+    }
+
+    .footer-links li {
+        display: block; /* Affiche les liens du footer verticalement */
+        margin: 10px 0; /* Ajoute un espace entre les liens */
+    }
+}
+
+/* Pour les smartphones */
+@media (max-width: 480px) {
+    .header-section, .footer-content {
+        padding: 10px;
+    }
+
+    .title-logo h1, .footer-links a, #intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-icon {
+        margin: 0 5px; /* Réduit l'espace entre les icônes */
+    }
+
+    .input-title, .button {
+        padding: 5px;
+    }
+
+    #site-search, #search-btn {
+        width: 100%; /* Permet aux champs de recherche de prendre toute la largeur */
+        margin: 5px 0; /* Ajuste l'espacement */
+    }
+
+    .gallery, .gallery-wrap {
+        flex-direction: column;
+    }
+
+    .gallery span img {
+        margin: 10px 0; /* Augmente l'espace entre les images */
+    }
+}
