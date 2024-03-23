@@ -5,12 +5,6 @@ const scrollContainer = document.querySelector(".gallery");
 const backBtn = document.getElementById("backBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-// Ajouter un écouteur d'événement pour le défilement avec la molette de la souris sur le conteneur de la galerie
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault(); // Empêcher le comportement de défilement par défaut pour un contrôle fin
-    scrollContainer.scrollLeft += evt.deltaY; // Défiler horizontalement en fonction du mouvement vertical de la molette
-    scrollContainer.style.scrollBehavior = "auto"; // Désactiver le défilement fluide pour les interactions de la molette de la souris
-});
 
 // Ajouter un écouteur d'événement sur le bouton "Suivant" pour faire défiler la galerie vers la droite
 nextBtn.addEventListener("click", () => {
@@ -73,7 +67,7 @@ document.addEventListener("DOMContentLoaded",function() {
         certaines espèces de baleines parcourent des milliers de kilomètres lors de leurs migrations
         Par exemple, la baleine à bosse peut voyager jusqu'à 25 000 kilomètres de l'Arctique à l'Antarctique 
         Ces migrations sont cruciales pour la survie de ces mammifères, et les scientifiques étudient activement
-         ces comportements pour mieux comprendre leur impact sur l'écosystème marin.`,
+         ces comportements pour mieux comprendre `,
         lien :"https://fr.wikipedia.org/wiki/Portail:Oc%C3%A9an_Pacifique#:~:text=L'oc%C3%A9an%20Pacifique%2C%20qui%20s,'Asie%20(Japon%2C%20Philippines."
     },
     {
@@ -81,7 +75,7 @@ document.addEventListener("DOMContentLoaded",function() {
         text : `<h1>Les dauphins</h1> sont réputés pour leur intelligence et leur capacité à communiquer de manière complexe. <br>
         Leurs clics, sifflements et vocalisations constituent un langage sophistiqué qui facilite la coordination dans la chasse,<br>
          la protection des petits, et même la transmission culturelle entre les groupes. Les chercheurs explorent ces formes de 
-         communication pour mieux comprendre la vie sociale et cognitive de ces créatures marines incroyables.`,
+         communication pour mieux comprendre ..`,
         lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Atlantique"
     },
     {
@@ -119,7 +113,7 @@ document.addEventListener("DOMContentLoaded",function() {
         d'eau salée d'une richesse et d'une complexité extraordinaires. Elle a été le berceau de nombreuses civilisations
          qui ont marqué l'histoire humaine, et elle continue d'être un carrefour culturel, économique, et écologique vital. 
          Mais la Méditerranée est bien plus qu'une simple mer; c'est un écosystème unique en son genre, abritant une biodiversité 
-         exceptionnelle et faisant face à des défis environnementaux majeurs.`,
+         exceptionnelle .`,
         lien :"https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e"
     },
     {
@@ -129,7 +123,7 @@ document.addEventListener("DOMContentLoaded",function() {
          sont en réalité les plus grands membres de la famille des dauphins. Ces majestueux mammifères marins
           se distinguent par leur intelligence remarquable, leur comportement social complexe et leur répartition 
           géographique vaste, étant présents dans tous les océans du monde, des eaux glacées de l'Arctique et de 
-          l'Antarctique jusqu'aux mers plus tempérées et tropicales.`,
+          l'Antarctique jusqu'aux mers plus tempérées et .`,
         lien :"https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e"
     },
      
@@ -167,4 +161,4 @@ document.addEventListener("DOMContentLoaded",function() {
         addDivs();
     });
 
-    
+
