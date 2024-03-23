@@ -430,6 +430,39 @@ footer {
 
 /* Styles de base, comme défini précédemment */
 
+.image-container {
+    position: relative;
+    width: auto; /* Ajustez selon la taille de votre image */
+  }
+  
+  #map {
+    width: 100%; /* Ajustez selon vos besoins */
+    height: auto;
+  }
+  
+  .loupe {
+    position: absolute;
+    border: 2px solid #000; /* Style de la bordure de la loupe */
+    border-radius: 50%; /* Pour un effet loupe circulaire */
+    width: 100px; /* Taille de la loupe */
+    height: 100px;
+    display: none; /* Cache la loupe initialement */
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  
+  /* Ajustez le zoom selon vos préférences */
+  .loupe::after {
+    content: "";
+    position: absolute;
+    width: 200%; /* Taille du zoom */
+    height: 200%;
+    top: -50%; left: -50%;
+    background-image: url('chemin/vers/votre/carte.jpg');
+    background-repeat: no-repeat;
+  }
+  
+
 /* Pour les tablettes */
 @media (max-width: 768px) {
     .header-section, .footer-content {
