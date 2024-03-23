@@ -218,31 +218,6 @@ margin: 5rem;
     top: 160px;
 }
 
-#g {
-    left: 0;
-    opacity: 0.4;
-    transform: rotate(0deg);
-    transition: all 0.3s ease;
-}
-
-#d {
-    right: 0;
-    opacity: 0.4;
-    transform: rotate(180deg);
-    transition: all 0.3s ease;
-}
-
-#g:hover {
-    transform: rotate(0deg) scale(1.1);
-    opacity: 1;
-    transition: all 0.3s ease;
-} 
-#d:hover {
-    transform: rotate(180deg) scale(1.1);
-    opacity: 1;
-    transition: all 0.3s ease;
-} 
-
 .carousel  {
     display: flex;
     justify-content: center;
@@ -252,14 +227,8 @@ margin: 5rem;
     color: #ffffff;
     text-decoration:underline;
 
-    
 }
 
-.carousel  span {
-    color: #02457a;
-    font-style: italic;
-   
-}
 
 .gallery {
     display: flex;
@@ -268,11 +237,11 @@ margin: 5rem;
     padding: 10px;
 }
 
-.gallery span {
+.gallery div {
     flex: none; /* Garde les spans dans le flux flex sans les étirer */
 }
 
-.gallery span img {
+.gallery div img {
     margin: 15px;
     width: 800px; /* ou 'auto' pour conserver les proportions originales */
     height: 400px; /* ou 'auto' pour conserver les proportions originales */
@@ -291,6 +260,58 @@ margin: 5rem;
     
 }
 
+
+.myDiv {
+    width: 35%;
+    align-self: stretch;
+    background-image: url(/images/fondMarine.jpg);
+    margin: 10px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    /* Ajoutez d'autres propriétés de style au besoin */
+    color: #fff; /* Couleur du texte pour contraster avec le dégradé */
+    transition: all 0.3s ease;  /* Ajout d'une transition fluide */
+}
+
+.myDiv:hover {
+    background: linear-gradient(to right, #3498db,#001b48);
+   ; 
+   
+}
+
+
+.myDiv p {
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.myDiv img {
+    border-radius: 20px;
+   margin: 5px;
+}
+
+
+.myDiv a {
+    display: inline-flex;
+    justify-content: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    text-decoration:solid;
+    color: #242f49;
+    font-weight: bold;
+    transition: all 0.3s ease-out;    
+}
+
+.myDiv a:hover {
+    background: linear-gradient(to right, #3498db, #ffffff);
+    color: #fff;
+    padding: 20px;
+}
 #backBtn {
     cursor: pointer;
     left: 0;
@@ -319,11 +340,9 @@ margin: 5rem;
 
 
 
-.gallery span img:hover{
-    filter:grayscale(0) ;
-    cursor: pointer;
-    transform: scale(1.1);
-}
+
+
+
 
 #carte-inter h2 {
     display: flex;
@@ -331,8 +350,9 @@ margin: 5rem;
     font-size: 3rem;
     margin-top: 3rem;
     padding: 40px;
-    color: #ffffff;
+    color: #152642;
     text-decoration:underline;
+    
 }
 
 #carte-inter img {
@@ -341,7 +361,8 @@ margin: 5rem;
 }
 
 footer {
-    background: linear-gradient(to bottom, #ffffff 0%, #001b48 100%);
+   /* background: linear-gradient(to bottom, #ffffff 0%, #001b48 100%);*/
+   background-image: url(/images/fondMarine.jpg);
     color: white;
     padding:5rem;
     text-align: center;
@@ -407,64 +428,89 @@ footer {
     margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
 }
 
+/* Styles de base, comme défini précédemment */
+
 /* Pour les tablettes */
 @media (max-width: 768px) {
     .header-section, .footer-content {
         flex-direction: column;
+        text-align: center;
     }
 
-    .title-logo h1, .footer-links a, #intro h2 {
-        font-size: 2rem;
+    .header-section ul, .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .gallery span img, #carousel, #container {
-        width: 100%;
-        height: auto;
+    .header-section a, .footer-links a {
+        margin: 10px 0; /* Ajustement pour le responsive */
     }
 
-    .input-title, .button {
-        padding: 10px;
-        margin: 0 auto; /* Centre les éléments */
+    #carousel, #container, .photo {
+        width: 100%; /* S'ajuste à la largeur de l'écran */
+        height: auto; /* Maintient les proportions */
     }
 
-    .social-icon {
-        font-size: 20px; /* Réduit la taille des icônes des réseaux sociaux */
+    #intro h2, .carousel h2, .footer-content h2 {
+        font-size: 2rem; /* Taille de police réduite pour les écrans plus petits */
+        margin: 2rem 0; /* Ajustement de la marge */
     }
 
-    .footer-links li {
-        display: block; /* Affiche les liens du footer verticalement */
-        margin: 10px 0; /* Ajoute un espace entre les liens */
+    .introduction, .gallery {
+        flex-direction: column;
+    }
+
+    .introduction {
+        margin-top: 2rem; /* Ajustement pour éviter le chevauchement */
+    }
+
+    .gallery span img {
+        width: 100%; /* S'ajuste à la largeur du conteneur */
+        height: auto; /* Maintient les proportions */
     }
 }
 
 /* Pour les smartphones */
 @media (max-width: 480px) {
     .header-section, .footer-content {
-        padding: 10px;
-    }
-
-    .title-logo h1, .footer-links a, #intro h2 {
-        font-size: 1.5rem;
-    }
-
-    .social-icon {
-        margin: 0 5px; /* Réduit l'espace entre les icônes */
-    }
-
-    .input-title, .button {
-        padding: 5px;
-    }
-
-    #site-search, #search-btn {
-        width: 100%; /* Permet aux champs de recherche de prendre toute la largeur */
-        margin: 5px 0; /* Ajuste l'espacement */
-    }
-
-    .gallery, .gallery-wrap {
         flex-direction: column;
     }
 
+    .header-section ul, .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-section a, .footer-links a {
+        margin: 8px 0; /* Espacement vertical pour les liens */
+    }
+
+    #intro h2, .carousel h2, .footer-content h2 {
+        font-size: 1.5rem; /* Taille de police plus petite pour les petits écrans */
+        margin: 1.5rem 0;
+    }
+
+    .title-logo h1 {
+        font-size: 1.2rem; /* Réduction de la taille de la police pour le logo */
+    }
+
+    .title-logo p, .introduction p {
+        font-size: 0.9rem; /* Taille de police réduite pour le texte */
+    }
+
+    #carousel, #container, .photo {
+        width: 100%; /* Adaptation à la largeur de l'écran */
+    }
+
+    .introduction, .gallery {
+        flex-direction: column;
+    }
+
+    .introduction {
+        margin-top: 1rem; /* Ajustement de la marge */
+    }
+
     .gallery span img {
-        margin: 10px 0; /* Augmente l'espace entre les images */
+        width: 100%; /* Adaptation à la largeur du conteneur */
     }
 }
