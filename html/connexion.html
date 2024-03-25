@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="../css/connexion.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content-wrapper">
         <header>
             <section class="header-section">
                 <div class="title-logo">
@@ -29,19 +27,23 @@
                     </ul> 
                 </nav>
                 <div class="input-title"> 
-                    <input type="search" id="site-search" name="q" placeholder="Rechercher">
-                    <button type="button" id="search-btn">CONNEXION</button>
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="search" id="site-search" name="q" placeholder=" " required> <!-- Notez l'espace dans placeholder et l'ajout de required -->
+                    <label for="site-search">Rechercher</label>
                 </div>
+                    <div class="button-connecxion">
+                    <button type="button" id="search-btn">CONNEXION</button>
+                  </div> 
             </section>
         </header>
         <div id="intro">
             <h2><span>Rejoignez</span> 
                 <br>La communauté Ocean Guardian</h2>
         </div>
-    </div>
+    
 
     <main>
-        <section>
+        <section class="form-section">
             <video id="font-video" autoplay muted loop>
                 <source src="../video/video1.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas les vidéos HTML5.
@@ -64,7 +66,7 @@
                             <input type="checkbox" id="stayConnected">
                             <label for="stayConnected">Rester Connecté <a href="#">Mot de passe oublié ?</a></label>
                         </div>
-                        <button>Se Connecter</button>
+                        <button class="form-button">Se Connecter</button>
                         <div class="register">
                             <p>Je n'ai pas de compte ? <a href="#">Inscription</a></p>
                         </div>
@@ -97,8 +99,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="connexion.js"></script>
+    <script src="../script.js"></script>
+    <script src="../connexion.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

@@ -67,21 +67,50 @@ a:hover {
 }
 
 
-.input-title{
+.input-title {
+    position: relative;
+    margin: 10px;
+    width: 300px;
     display: flex;
     align-items: center;
-   }
+    border-bottom: 2px solid rgb(255, 255, 255); /* Ligne de séparation */
+}
 
-   #site-search {
-    background-color: transparent; /* Fond transparent */
-    color: #fff;
-     padding: 10px;
-     border: 1px solid #ccc;
-     border-radius: 5px;
-     margin-right: 10px; /* Ajuste la position par rapport au bouton */
-     width: 200px; /* Ajuste la largeur selon tes besoins */
+.input-title ion-icon {
+    position: absolute;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em; /* Taille de l'icône */
+}
 
-   }
+.input-title input[type="search"] {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 5px 35px; /* Ajuster pour ne pas écrire sur l'icône */
+    color: rgb(255, 255, 255);
+}
+
+.input-title label {
+    position: absolute;
+    left: 45px; /* Décaler le label pour tenir compte de l'icône */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-title input:focus ~ label,
+.input-title input:valid ~ label {
+    top: -5px;
+    font-size: .8em; /* Réduire la taille de police lorsque le label se déplace vers le haut */
+}
+
 
    #search-btn {
        background-color: transparent; /* Fond transparent */
@@ -404,71 +433,76 @@ footer {
    text-align: center;
    padding: 10px 0 10px;
    position: relative;
-   top: 56%;
+   top: 55%;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
-}
 
-.footer-content h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    padding-bottom: 40px;
-    color: #ffffff;
-    
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.footer-links a {
-    padding: 20px;
-    transition: all 0.3s ease-out;;
-}
-
-.footer-links a:hover {
-    background-color: #ffffff;
-    border-radius: 30px ;
-    color: #02457a;
-    text-decoration:underline;
-}
-
-.social-media {
-    margin-top: 20px;
-}
-
-.social-icon {
-    color: white;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-    background-color: #ffffff;
-    color: #02457a;
-}
-
-.separator {
-    width: 80%; /* Ajustez la largeur selon votre préférence */
-    height: 1px;
-    background-color: #fff; /* Couleur de la ligne */
-    margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
-}
+ 
+ .footer-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     flex: 1;
+ }
+ 
+ .footer-content h2 {
+     display: flex;
+     justify-content: center;
+     font-size: 2rem;
+     padding-bottom: 4px;
+     padding: 10px;
+     color: #ffffff;
+     
+ }
+ 
+ .footer-links {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ .footer-links li {
+     display: inline;
+     margin: 0 15px;
+ }
+ 
+ .footer-links a {
+     padding: 10px;
+     transition: all 0.3s ease-out;;
+     font-size: 1rem;
+     margin: 10px;
+ }
+ 
+ .footer-links a:hover {
+     background-color: #ffffff;
+     border-radius: 30px ;
+     color: #02457a;
+     text-decoration:underline;
+ }
+ 
+ .social-media {
+     margin-top: 20px;
+ }
+ 
+ .social-icon {
+     color: white;
+     font-size: 24px;
+     margin: 0 10px;
+     transition: all 0.3s ease-out;;
+ }
+ 
+ .social-icon:hover {
+     transform: scale(1.1);
+     background-color: #ffffff;
+     color: #02457a;
+ }
+ 
+ .separator {
+     width: 80%; /* Ajustez la largeur selon votre préférence */
+     height: 1px;
+     background-color: #fff; /* Couleur de la ligne */
+     margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
+ }
 
 /* Styles de base, comme défini précédemment */
 

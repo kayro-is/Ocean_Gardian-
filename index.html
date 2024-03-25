@@ -34,7 +34,11 @@
         </nav>
 
         <div class="input-title"> 
-            <input type="search" id="site-search" name="q" placeholder="Rechercher">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="search" id="site-search" name="q" placeholder=" " required> <!-- Notez l'espace dans placeholder et l'ajout de required -->
+            <label for="site-search">Rechercher</label>
+        </div>
+            <div class="button-connecxion">
             <button type="button" id="search-btn">CONNEXION</button>
           </div>    
     </section>
@@ -115,7 +119,8 @@
 
     <script src="script.js"></script>
     <script src="connexion.js"></script>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
 </body>
 </html>
