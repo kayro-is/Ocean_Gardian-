@@ -1,9 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollContainer = document.querySelector(".gallery");
+    const backBtn = document.getElementById("backBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-const scrollContainer = document.querySelector(".gallery");
 
-
-const backBtn = document.getElementById("backBtn");
-const nextBtn = document.getElementById("nextBtn");
+})
 
 
 // Ajouter un écouteur d'événement sur le bouton "Suivant" pour faire défiler la galerie vers la droite

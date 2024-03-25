@@ -1,84 +1,54 @@
-/* Pour les tablettes */
+/* Règles pour les tablettes */
 @media (max-width: 768px) {
-    .header-section, .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-section ul, .footer-links {
+    .header-section, .input-title, .footer-content, .gallery-wrap {
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
     }
 
-    .header-section a, .footer-links a {
-        margin: 10px 0; /* Ajustement pour le responsive */
+    .header-section ul {
+        flex-direction:column;
+        flex-wrap: wrap;
+
     }
 
-    #carousel, #container, .photo {
-        width: 100%; /* S'ajuste à la largeur de l'écran */
-        height: auto; /* Maintient les proportions */
+    .header-section a, .input-title input, .button-connexion button {
+        margin: 10px 0;
     }
 
-    #intro h2, .carousel h2, .footer-content h2 {
-        font-size: 2rem; /* Taille de police réduite pour les écrans plus petits */
-        margin: 2rem 0; /* Ajustement de la marge */
+    #intro h2, .introduction h2, .carousel h2, .footer-content h2 {
+        font-size: 1.5rem;
     }
 
-    .introduction, .gallery {
-        flex-direction: column;
-    }
-
-    .introduction {
-        margin-top: 2rem; /* Ajustement pour éviter le chevauchement */
-    }
-
-    .gallery span img {
-        width: 100%; /* S'ajuste à la largeur du conteneur */
-        height: auto; /* Maintient les proportions */
+    .gallery div img, .carousel img, .introduction p, .footer-links a {
+        width: 10%; /* Ajustement pour une meilleure vue */
     }
 }
 
-/* Pour les smartphones */
+/* Règles pour les téléphones mobiles */
 @media (max-width: 480px) {
-    .header-section, .footer-content {
-        flex-direction: column;
-    }
-
-    .header-section ul, .footer-links {
+    .header-section, .input-title, .footer-content, .gallery-wrap {
         flex-direction: column;
         align-items: center;
     }
 
-    .header-section a, .footer-links a {
-        margin: 8px 0; /* Espacement vertical pour les liens */
-    }
-
-    #intro h2, .carousel h2, .footer-content h2 {
-        font-size: 1.5rem; /* Taille de police plus petite pour les petits écrans */
-        margin: 1.5rem 0;
-    }
-
-    .title-logo h1 {
-        font-size: 1.2rem; /* Réduction de la taille de la police pour le logo */
-    }
-
-    .title-logo p, .introduction p {
-        font-size: 0.9rem; /* Taille de police réduite pour le texte */
-    }
-
-    #carousel, #container, .photo {
-        width: 100%; /* Adaptation à la largeur de l'écran */
-    }
-
-    .introduction, .gallery {
+    .header-section ul {
         flex-direction: column;
     }
 
-    .introduction {
-        margin-top: 1rem; /* Ajustement de la marge */
+    .header-section a, .input-title input, .button-connexion button {
+        margin: 8px 0;
     }
 
-    .gallery span img {
-        width: 100%; /* Adaptation à la largeur du conteneur */
+    #intro h2, .introduction h2, .carousel h2, .footer-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .gallery div img, .carousel img, .introduction p, .footer-links a {
+        width: 95%; /* Pour s'assurer que tout est bien visible */
+    }
+
+    .introduction, .gallery-intro, #carte-inter {
+        padding: 10px;
     }
 }
