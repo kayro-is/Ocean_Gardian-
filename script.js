@@ -162,3 +162,26 @@ document.addEventListener("DOMContentLoaded",function() {
     });
 
 
+
+    // déclancher une animation CSS au moment ou un élément devient visible a l'écran lors du scroll
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // Cet observateur déclenchera une fonction de rappel chaque fois qu'un élément observé entre ou sort de la zone visible.
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { // Correction ici: retrait de parenthèses inutiles autour de "entry"
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fadeInUp");
+                }
+            });
+        }, {
+            // L'option threshold définit quel pourcentage de l'élément doit être visible pour déclencher la fonction de rappel.
+            // Ici, dès que 10% de l'élément est visible, la fonction de rappel est déclenchée.
+            threshold: 0.1
+        });
+    
+        // Sélectionne tous les éléments h1 et h2 pour les observer.
+        const introSections = document.querySelectorAll("h1, h2");
+        introSections.forEach(section => {
+            observer.observe(section); // Démarre l'observation pour chaque section sélectionnée.
+        });
+    });

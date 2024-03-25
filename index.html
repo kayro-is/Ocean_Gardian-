@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
+    <section class="content-wrapper" >
     <header>
         <section class="header-section">
         <div class="title-logo">
@@ -34,20 +36,19 @@
         <div class="input-title"> 
             <input type="search" id="site-search" name="q" placeholder="Rechercher">
             <button type="button" id="search-btn">CONNEXION</button>
-          </div>
-          
-         
+          </div>    
     </section>
-
     <div id="intro">
         <h2><span>Bienvenue</span> sur OCEAN GUARDIAN</h2>
     </div>
+</header>
+</section>
+    
 
-    </header>
+ 
 
     <main>
 
-      
             <section class="introduction">
                 <h2>Introduction</h2>
                 
@@ -62,43 +63,33 @@
                  la différence. C'est le moment d'agir, pour les océans, pour la Terre, pour nous tous".</p>
                 </section>
 
-                <h2 class="carousel">Entrez dans le Monde Aquatique</h2>
-                <div class="gallery-wrap">
-                    <img src="/images/sort-left-64.png" id="backBtn" />
-                    <div class="gallery">
-                        <!--
-                        <div><img src="images/im1.jpg" alt="Migration des Baleine" ></div>
-                        <div><img src="images/im2.jpg" alt="Migration des dauphins"></div>
-                        <div><img src="images/im3.jpg" alt="Le coraille"></div>
-                        <div><img src="images/im4.jpg" alt="Les profondeurs de l'océan"></div>
-                        <div><img src="images/im5.jpg" alt="la vie des requins"></div>
-                        <div><img src="images/im6.jpg" alt="L'océan"></div>-->
+                <section class="gallery-intro">
+                    <h2 class="carousel">Entrez dans le Monde Aquatique</h2>
+                    <div class="gallery-wrap">
+                        <img src="images/sort-left-64.png" id="backBtn" alt="Bouton précédent" />
+                        <div class="gallery">
+                            <!-- Les images de votre galerie ici -->
+                        </div>
+                        <!-- Utilisation de CSS pour faire pivoter l'image pour le bouton suivant -->
+                        <img src="images/sort-left-64.png" id="nextBtn" alt="Bouton suivant" style="transform: rotate(180deg);" />
                     </div>
-                    <img src="/images/sort-left-64.png" id="nextBtn" />
-                </div>
+                </section>
 
-                <section id="carte-inter">
+               
+               <section id="carte-inter">
                     <h2>Carte interactive</h2>
                     <p>
                         L'invasion des déchets plastiques dans nos océans et sur nos terres est devenue l'une des crises environnementales les plus pressantes de notre époque. <br>
-                        Chaque année, des millions de tonnes de plastique se retrouvent dans l'environnement, menaçant la vie marine, perturbant les écosystèmes,
+                        Chaque année, des millions de tonnes de plastique se retrouvent dans l'environnement, menaçant la vie marine, <br> perturbant les écosystèmes,
                          et entrant dans notre chaîne alimentaire.</p>
                     
                         <div class="zoomLens" style="background-image: url('https://oceansetmersplastifies.fr/wp-content/uploads/2022/08/Invasion-dechets-plastiques.png');"></div>
                         <img src="https://oceansetmersplastifies.fr/wp-content/uploads/2022/08/Invasion-dechets-plastiques.png" alt="Vie sous-marine et plastique">
 
-                       
-
                 </section>
-                
                   </div>
-                 
                   </div>
-                  
-
     </main>
-
-    
     <footer>
         <div class="footer-content">
             <h2>OCEAN GUARDIAN</h2>
@@ -123,6 +114,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="connexion.js"></script>
     
     
 </body>
