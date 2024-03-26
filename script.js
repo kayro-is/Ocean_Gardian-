@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded",function() {
         Par exemple, la baleine à bosse peut voyager jusqu'à 25 000 kilomètres de l'Arctique à l'Antarctique 
         Ces migrations sont cruciales pour la survie de ces mammifères, et les scientifiques étudient activement
          ces comportements pour mieux comprendre `,
-        lien :"https://fr.wikipedia.org/wiki/Portail:Oc%C3%A9an_Pacifique#:~:text=L'oc%C3%A9an%20Pacifique%2C%20qui%20s,'Asie%20(Japon%2C%20Philippines."
+        lien :""
     },
     {
         image :"./images/im2.jpg",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded",function() {
         Leurs clics, sifflements et vocalisations constituent un langage sophistiqué qui facilite la coordination dans la chasse,<br>
          la protection des petits, et même la transmission culturelle entre les groupes. Les chercheurs explorent ces formes de 
          communication pour mieux comprendre ..`,
-        lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Atlantique"
+        lien :""
     },
     {
         image :"./images/im3.jpg",
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded",function() {
          de crustacés et d'autres organismes marins.
           Malheureusement, les récifs coralliens sont menacés par le changement climatique et d'autres activités humaines,
            ce qui rend crucial leur protection et leur préservation.`,
-        lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Indien"
+        lien :""
     },
     {
         image :"./images/im4.jpg",
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded",function() {
         méduses, ces créatures étonnantes sont adaptées à un environnement où la lumière du soleil 
         ne pénètre pas. Les scientifiques explorent encore ces mystérieux fonds marins pour découvrir 
         de nouvelles espèces et comprendre les adaptations uniques de la vie marine des abysses..`,
-        lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Austral"
+        lien :""
     },
     {
         image :"./images/im5.jpg",
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded",function() {
         représentés comme de simples machines à tuer, jouent en réalité un rôle crucial dans l'équilibre
          des écosystèmes marins. Loin d'être les monstres que l'on dépeint souvent, les requins sont des 
          créatures fascinantes qui méritent notre attention et notre respect.`,
-        lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Arctique"
+        lien :""
     },
     {
 
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded",function() {
          qui ont marqué l'histoire humaine, et elle continue d'être un carrefour culturel, économique, et écologique vital. 
          Mais la Méditerranée est bien plus qu'une simple mer; c'est un écosystème unique en son genre, abritant une biodiversité 
          exceptionnelle .`,
-        lien :"https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e"
+        lien :""
     },
     {
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded",function() {
           se distinguent par leur intelligence remarquable, leur comportement social complexe et leur répartition 
           géographique vaste, étant présents dans tous les océans du monde, des eaux glacées de l'Arctique et de 
           l'Antarctique jusqu'aux mers plus tempérées et .`,
-        lien :"https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e"
+        lien :""
     },
      
     ];
