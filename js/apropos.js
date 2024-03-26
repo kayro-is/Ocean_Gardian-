@@ -1,3 +1,7 @@
+document.getElementById('search-btn').addEventListener('click', function(){
+    window.location.href = "../html/connexion.html";
+  })
+
 // Sélectionne tous les éléments d'item dans le slider.
 let items = document.querySelectorAll('.slider .list .item');
 // Sélectionne l'élément bouton "suivant".
