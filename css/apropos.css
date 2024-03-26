@@ -198,6 +198,13 @@ li:last-child {
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
+    
+}
+.content p {
+    font-size: 1.1rem;
+    backdrop-filter: blur(20px);
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
 }
 .slider .list .item .content h2{
     font-size: 100px;
