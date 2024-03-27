@@ -17,6 +17,7 @@ body {
     background-image: url(../images/campagne-pollution-oceans-sacs-plastique-bouteilles-usagees-flottant.jpg);
     background-size: cover;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     min-height: 100vh; 
     margin: 0;
@@ -264,7 +265,7 @@ a:hover {
 
 .resume {
     position: relative;
-    top: 28%;
+    top: 24%;
     padding: 20px;
 }
 
