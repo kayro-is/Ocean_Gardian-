@@ -265,7 +265,7 @@ a:hover {
 
 .resume {
     position: relative;
-    top: 24%;
+    top: 22%;
     padding: 20px;
 }
 
@@ -368,3 +368,49 @@ a:hover {
      background-color: #fff; /* Couleur de la ligne */
      margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
  }
+
+ @media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    a {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Espacement entre les éléments lorsqu'ils sont empilés verticalement */
+    }
+
+    .introduction, .type-plastique, .type-chimique, .type-sonore, .resume {
+        width: 90%; /* Ajuste la largeur pour mieux s'adapter aux écrans plus petits */
+        transform: translate(-50%, -50%);
+        top: auto;
+        left: 50%;
+        position: relative;
+    }
+
+    .type-plastique img, .type-chimique img, .type-sonore img {
+        max-width: 100%; /* Assure que les images ne débordent pas de leur conteneur */
+    }
+
+    .type-chimique h2, .type-chimique p, .type-sonore p {
+        position: static; /* Réinitialise la position pour un meilleur affichage sur les petits écrans */
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    footer {
+        top: auto;
+        position: relative;
+    }
+}
+

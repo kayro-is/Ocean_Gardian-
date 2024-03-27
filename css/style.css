@@ -10,6 +10,7 @@ html, body {
     width: 100%;
     height: 100%; 
      background: linear-gradient(to top, #ffffff 0%, #001b48 100%);
+     
 
 }
 
@@ -18,9 +19,12 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Utilisez viewport height pour s'assurer que le body s'étend sur toute la hauteur de la fenêtre */
     margin: 0;
+    background: linear-gradient(to top, #ffffff 0%, #001b48 100%);
     background-image: url(../images/baleine-bosse-sautant-au-dessus-mer-ai-generative.jpg);
     background-repeat: no-repeat; /* Empêche l'image de se répéter */
-    background-size: cover;    
+    background-size: cover;  
+      
+   
     
 }
 
@@ -343,9 +347,12 @@ margin: 5rem;
 
 
 .myDiv img {
-    border-radius: 30px;
+    position: relative;
+    right:1%;
+   border-radius: 30px;
    margin: 5px ;
    padding: 20px;
+   max-width: 100%;
 
 }
 
@@ -522,4 +529,62 @@ footer {
     animation: fadeInUp 2s ease-out forwards;
 }
 
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
 
+    .header-section, .footer-content, .gallery, .myDiv, .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a, .footer-links a {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .input-title, #search-btn, .title-logo h1, .introduction, .gallery div img, #carousel, #container, .myDiv {
+        width: 90%;
+    }
+
+    .input-title input[type="search"], .myDiv p {
+        font-size: 0.9em;
+    }
+
+    .title-logo h1, #intro h2, .carousel, .gallery-intro, #carte-inter h2 {
+        font-size: 2rem;
+    }
+
+    .introduction, .myDiv, .gallery-wrap, #carte-inter p, .footer-content h2 {
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Conserver la disposition en carrousel pour .myDiv */
+    .gallery, .myDiv {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .gallery div, .myDiv img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+
+    #backBtn, #nextBtn {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    #backBtn:hover, #nextBtn:hover {
+        transform: scale(1.1);
+    }
+}
