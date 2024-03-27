@@ -388,3 +388,88 @@ footer {
         top: 10%;
     }
 }
+
+/* Styles de base, comme défini précédemment */
+
+/* Petits écrans / téléphones */
+@media only screen and (max-width: 600px) {
+    /*.header-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    .header-section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-section ul li a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .input-title {
+        margin: 20px auto;
+        width: 90%;
+    }
+    .title-logo h1, .title-logo p {
+        text-align: center;
+    }
+    .slider .list .item .content h2 {
+        font-size: 40px;
+    }
+    .content p {
+        font-size: .9rem;
+    }
+    .form-section, .box {
+        width: 90%;
+        margin: auto;
+    }
+    .footer-content {
+        padding: 10px;
+    }
+    .footer-content h2 {
+        font-size: 1.5rem;
+    }
+    .social-icon {
+        font-size: 20px;
+    }*/
+}
+
+/* Tablettes */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {}
+  /*  .header-section {
+        padding: 10px 5%;
+    }
+    .input-title {
+        margin: 25px auto;
+        width: 80%;
+    }
+    .title-logo h1, .title-logo p {
+        text-align: center;
+    }
+    .slider .list .item .content h2 {
+        font-size: 50px;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    .form-section, .box {
+        width: 80%;
+        margin: auto;
+    }
+    .footer-content {
+        padding: 15px;
+    }
+    .footer-content h2 {
+        font-size: 1.75rem;
+    }
+    .social-icon {
+        font-size: 22px;
+    }
+}
+
+/* Grands écrans et ordinateurs de bureau */
+@media only screen and (min-width: 1025px) {
+    /* Vos styles pour les grands écrans ici */
+    
+}
+

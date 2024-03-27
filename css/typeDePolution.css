@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-image: url(../images/campagne-pollution-oceans-sacs-plastique-bouteilles-usagees-flottant.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+   
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    flex-wrap: nowrap; 
+}
+
+  ul {
+    list-style: none; /* Enlève les puces */
+    display: flex; /* Affiche les éléments de la liste horizontalement */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+    font-size: 1.3rem;
+    color: #fff;
+    
+}
+
+  a {
+    margin-right: 5rem; /* Espacement entre les liens */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    transition: all 0.3s ease-out;
+       
+   
+   
+}
+
+a:hover {
+    background-color: #fff;
+    border-radius: 30px ;
+    color: #02457a;
+    text-decoration:underline;
+}
+
+
+.input-title {
+    position: relative;
+    margin: 30px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 255, 255); /* Ligne de séparation */
+}
+
+.input-title ion-icon {
+    position: absolute;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em; /* Taille de l'icône */
+}
+
+.input-title input[type="search"] {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 5px 35px; /* Ajuster pour ne pas écrire sur l'icône */
+    color: rgb(255, 255, 255);
+}
+
+.input-title label {
+    position: absolute;
+    left: 45px; /* Décaler le label pour tenir compte de l'icône */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-title input:focus ~ label,
+.input-title input:valid ~ label {
+    top: -5px;
+    font-size: .8em; /* Réduire la taille de police lorsque le label se déplace vers le haut */
+}
+
+   #search-btn {
+       background-color: transparent; /* Fond transparent */
+       border: 1px #fff; /* Couleur de la bordure */
+       border-radius: 30px 30px 30px 30px;
+       cursor: pointer;
+       color: #fff; /* Couleur du texte */
+       transition: all 0.3s ease-out;      
+       padding: 20px;
+       display: flex;
+       align-items: center;
+       margin-left: 10px;
+       font-weight: bold;
+
+   }
+   #search-btn:hover {
+       background-color: #fff;
+       color: #02457a;
+       text-decoration:underline;
+   }
+
+   #intro h2 {
+    font-size: 5rem;
+    color: #fff;
+    margin: 5rem;
+    }
+  
+
+.introduction {
+    font-size: 1.5rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 2px solid #fff; 
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+   
+}
+
+.introduction h2 {
+    text-align: center;
+}
+
+.type-plastique {
+    position: relative;
+    top: 20%;
+}
+
+.type-plastique img {
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+.type-plastique {
+ backdrop-filter: blur(10px);
+ padding: 20px;
+ 
+}
+.type-plastique h2 {
+    font-size: 4em;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.type-plastique p {
+    font-size: 1.5em;
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+.type-chimique {
+    position: relative;
+    top: 30%;
+    padding: 20px;
+}
+
+.type-chimique img {
+    max-width: 50%;
+    border-radius: 10%;
+}
+
+.type-chimique h2 {
+    position: absolute;
+    font-size: 4em;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    left: 65%;
+}
+.type-chimique p {
+    position: absolute;
+    left: 52%;
+    top: 30%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 2em;
+    
+}
+
+   footer {
+    /* background: linear-gradient(to bottom, #ffffff 0%, #001b48 100%);*/
+    border-top: 1px solid #fff;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    padding: 10px ;
+    position: relative;
+    top: 80%;
+  
+ }
+ 
+ .footer-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     flex: 1;
+ }
+ 
+ .footer-content h2 {
+     display: flex;
+     justify-content: center;
+     font-size: 2rem;
+     padding-bottom: 4px;
+     padding: 10px;
+     color: #ffffff;
+     
+ }
+ 
+ .footer-links {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ .footer-links li {
+     display: inline;
+     margin: 0 15px;
+ }
+ 
+ .footer-links a {
+     padding: 10px;
+     transition: all 0.3s ease-out;;
+     font-size: 1rem;
+     margin: 10px;
+ }
+ 
+ .footer-links a:hover {
+     background-color: #ffffff;
+     border-radius: 30px ;
+     color: #02457a;
+     text-decoration:underline;
+ }
+ 
+ .social-media {
+     margin-top: 20px;
+ }
+ 
+ .social-icon {
+     color: white;
+     font-size: 24px;
+     margin: 0 10px;
+     transition: all 0.3s ease-out;;
+ }
+ 
+ .social-icon:hover {
+     transform: scale(1.1);
+     background-color: #ffffff;
+     color: #02457a;
+ }
+ 
+ .separator {
+     width: 80%; /* Ajustez la largeur selon votre préférence */
+     height: 1px;
+     background-color: #fff; /* Couleur de la ligne */
+     margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
+ }
